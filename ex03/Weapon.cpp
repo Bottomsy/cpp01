@@ -2,15 +2,14 @@
 
 Weapon::Weapon()
 {
-    type = "Wepn";
+    type = "No Weapon assigned";
 }
-
 Weapon::Weapon(std::string newtype)
 {
     type = newtype;
 }
 
-const std::string &Weapon::getType()
+const std::string &Weapon::getType() const
 {
     return type;
 }
